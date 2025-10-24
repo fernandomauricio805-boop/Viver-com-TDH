@@ -1,278 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Viver com TDH — Causas, Sintomas, Tratamento e Dicas de Convivência</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Viver com TDH — Informação, Dicas e Apoio</title>
 
-  <!-- SEO principal -->
-  <meta name="description" content="Blogue de saúde mental sobre o Transtorno de Défice de Atenção e Hiperatividade (TDH). Saiba as causas, sintomas, tratamento e dicas práticas para conviver melhor.">
-  <meta name="keywords" content="TDH, TDAH, Transtorno de Défice de Atenção e Hiperatividade, sintomas TDH, tratamento TDH, convivência TDH, crianças com TDH">
+  <!-- SEO -->
+  <meta name="description" content="Viver com TDH — dicas, causas, tratamento e convivência. Informação, apoio e histórias reais sobre o Transtorno de Défice de Atenção e Hiperatividade.">
+  <meta name="robots" content="index,follow">
   <meta name="author" content="Viver com TDH">
-  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fernandomauricio.github.io/viver-com-tdh/">
+  <link rel="sitemap" type="application/xml" href="https://fernandomauricio.github.io/viver-com-tdh/sitemap.xml" />
+  <meta name="theme-color" content="#1e73be">
 
-  <!-- Verificação Google Search Console -->
-  <meta name="google-site-verification" content="56c713c1a9a05f0a" />
+  <!-- Google site verification -->
+  <meta name="google-site-verification" content="google56c713c1a9a05f0a" />
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Viver com TDH — Informação, Dicas e Apoio">
-  <meta property="og:description" content="Descubra conteúdos sobre causas, sintomas, tratamento e convivência com o TDH.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1200&q=80">
-  <meta property="og:url" content="https://fernandomauricio.github.io/viver-com-tdh">
+  <meta property="og:description" content="Dicas práticas, causas, tratamento e convivência com o TDH. Informação acessível para quem vive e convive com o transtorno.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Viver com TDH">
-  <meta property="og:locale" content="pt_PT">
+  <meta property="og:url" content="https://fernandomauricio.github.io/viver-com-tdh/">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Viver com TDH — Informação, Dicas e Apoio">
-  <meta name="twitter:description" content="Conteúdos práticos para entender e conviver com o TDH.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1200&q=80">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://fernandomauricio.github.io/viver-com-tdh">
-
-  <!-- Ícone e Fonte -->
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2920/2920343.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --blue:#1e73be;
-      --blue-2:#2e89d2;
-      --blue-dark:#155a9a;
-      --bg:#ffffff;
-      --page-bg:#f3f7fb;
-      --card:#ffffff;
-      --text:#1f2933;
-      --muted:#6b7280;
-      --radius:12px;
+      --blue:#1e73be; --blue-dark:#155a9a; --page-bg:#f3f7fb; --card:#fff; 
+      --text:#1f2933; --muted:#6b7280; --radius:12px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --page-bg:#0d1117; --card:#161b22; --text:#e6edf3; --muted:#9ca3af; --blue:#2e89d2; --blue-dark:#1e73be; }
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:"Poppins",sans-serif;
-      color:var(--text);
-      background:var(--page-bg);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
+    body{ margin:0; font-family:"Poppins",sans-serif; color:var(--text); background:var(--page-bg); line-height:1.6; -webkit-font-smoothing:antialiased; }
 
-    /* Header hero */
+    /* Hero */
     header.hero{
-      background: linear-gradient(135deg,var(--blue),var(--blue-2));
-      color:#fff;
-      padding:64px 18px;
-      text-align:center;
+      background:
+       linear-gradient(135deg, rgba(30,115,190,0.82), rgba(46,137,210,0.82)),
+       url('https://images.unsplash.com/photo-1584697964403-55b92d9e27cf?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color:#fff; padding:64px 18px; text-align:center; background-blend-mode:overlay;
     }
-    header.hero h1{margin:0; font-size:2.2rem}
-    header.hero p{margin:10px 0 0; opacity:0.95; font-size:1rem}
+    header.hero h1{margin:0;font-size:2.4rem}
+    header.hero p{margin:10px auto 0;max-width:720px;opacity:.95}
 
-    /* Nav */
-    nav.site-nav{
-      background:#fff;
-      box-shadow:0 2px 8px rgba(20,30,50,0.06);
-      position:sticky; top:0; z-index:40;
-    }
-    .nav-inner{
-      max-width:1100px; margin:0 auto; padding:12px 20px;
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-    }
-    .brand { color:var(--blue); font-weight:600; font-size:1.05rem; text-decoration:none}
-    .menu {
-      list-style:none; margin:0; padding:0; display:flex; gap:18px; align-items:center;
-    }
-    .menu a{ text-decoration:none; color:var(--blue); font-weight:500; padding:8px 6px; display:inline-block}
-    .menu a:hover{ color:var(--blue-dark) }
+    /* Navegação */
+    nav.site-nav{ background:var(--card); box-shadow:0 2px 8px rgba(0,0,0,0.06); position:sticky; top:0; z-index:40 }
+    .nav-inner{ max-width:1100px; margin:0 auto; padding:10px 18px; display:flex; justify-content:space-between; align-items:center }
+    .brand{ color:var(--blue); font-weight:600; text-decoration:none; display:flex; align-items:center; gap:10px }
+    .menu{ list-style:none; display:flex; gap:14px; margin:0; padding:0 }
+    .menu a{ color:var(--blue); text-decoration:none; font-weight:500 }
+    .menu a:hover{ text-decoration:underline; }
+    .menu-toggle{ display:none; background:none; border:none; font-size:1.5rem; color:var(--blue); cursor:pointer; }
 
-    .menu-toggle{ display:none; background:none; border:0; cursor:pointer }
-    .menu-toggle span{ display:block; width:22px; height:3px; background:var(--blue); margin:4px 0; border-radius:3px}
-
-    /* Main layout */
-    main{ max-width:1100px; margin:34px auto; padding:0 20px 60px }
-    section{ margin-bottom:36px }
+    /* Conteúdo principal */
+    main{ max-width:1100px; margin:30px auto; padding:0 18px 60px }
     h2{ color:var(--blue-dark); border-left:5px solid var(--blue); padding-left:12px; margin:0 0 12px }
-    p.lead{ margin:8px 0 0; color:var(--muted) }
+    p.lead{ color:var(--muted) }
 
-    /* Grid artigos */
-    .grid { display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)) }
-    .card{
-      background:var(--card); padding:18px; border-radius:var(--radius);
-      box-shadow:0 6px 18px rgba(20,30,50,0.06); overflow:hidden;
-    }
-    .card img{ width:100%; height:170px; object-fit:cover; border-radius:8px }
-    .card h3{ margin:12px 0 6px; color:var(--blue-dark); font-size:1.05rem }
-    .card p{ margin:0; color:var(--muted) }
-    .btn{ display:inline-block; margin-top:12px; background:var(--blue); color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; font-weight:600 }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px }
+    .card{ background:var(--card); padding:14px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); overflow:hidden; transition:transform .2s ease }
+    .card:hover{ transform:translateY(-4px) }
+    .card img{ width:100%; height:180px; object-fit:cover; border-radius:8px; display:block; background:#f0f2f5 }
+    .card h3{ margin:10px 0 6px; color:var(--blue-dark) }
+    .btn{ background:var(--blue); color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; display:inline-block; font-weight:600; transition:background .2s ease }
     .btn:hover{ background:var(--blue-dark) }
 
-    /* Depoimentos */
-    .depo{ display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:12px }
-    .depo-item{ background:var(--card); padding:18px; border-radius:var(--radius); box-shadow:0 6px 18px rgba(20,30,50,0.04) }
-    .depo-item p{ font-style:italic; margin:0 0 8px }
-    .depo-item .autor{ color:var(--blue-dark); font-weight:600 }
-
-    /* Form */
-    form.card-form{ display:flex; flex-direction:column; gap:12px; margin-top:18px; padding:18px }
-    label{ font-weight:500; color:var(--text) }
-    input[type="text"], input[type="email"], textarea{
-      padding:12px; border:1px solid #d6dbe2; border-radius:8px; font-size:1rem; font-family:inherit
-    }
-    textarea{ min-height:110px; resize:vertical }
-    input:focus, textarea:focus{ outline:none; border-color:var(--blue); box-shadow:0 0 0 6px rgba(46,137,210,0.06) }
-    button.cta{ background:var(--blue); color:#fff; border:0; padding:12px 14px; border-radius:10px; cursor:pointer; font-weight:600 }
-    button.cta:hover{ background:var(--blue-dark) }
-
     /* Footer */
-    footer.site-footer{ background:var(--blue); color:#fff; padding:22px 10px; text-align:center; margin-top:30px; border-top-left-radius:16px; border-top-right-radius:16px }
+    footer{ background:var(--blue); color:#fff; text-align:center; padding:18px 10px; margin-top:30px; border-top-left-radius:12px; border-top-right-radius:12px }
 
-    /* Responsive */
-    @media (max-width:800px){
-      .menu { display:none; position:fixed; left:0; right:0; top:64px; background:#fff; flex-direction:column; gap:0; padding:12px; box-shadow:0 8px 30px rgba(10,20,40,0.12) }
-      .menu.show { display:flex }
-      .menu a{ padding:10px 12px }
-      .menu-toggle{ display:block }
+    @media (max-width:820px){
+      .menu{ display:none; flex-direction:column; background:var(--card); position:absolute; top:60px; right:10px; padding:10px 16px; border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,0.1); }
+      .menu.show{ display:flex; }
+      .menu-toggle{ display:block; }
+      header.hero{ padding:48px 14px }
+      header.hero h1{ font-size:1.9rem }
     }
   </style>
 </head>
 <body>
-
-  <!-- HERO -->
   <header class="hero" role="banner">
     <h1>Viver com TDH</h1>
-    <p class="lead">Informação, dicas práticas e histórias reais para quem vive com o Transtorno de Défice de Atenção e Hiperatividade.</p>
+    <p class="lead">Informação, dicas práticas e histórias reais para quem vive com TDH e para quem convive com elas.</p>
   </header>
 
-  <!-- NAV -->
   <nav class="site-nav" role="navigation" aria-label="Menu principal">
     <div class="nav-inner">
-      <a class="brand" href="index.html">Viver com TDH</a>
+      <a class="brand" href="index.html" aria-label="Viver com TDH">
+        <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2e89d2"/><stop offset="1" stop-color="#1e73be"/></linearGradient></defs>
+          <rect width="48" height="48" rx="8" fill="url(#g)"></rect>
+          <circle cx="24" cy="16" r="4" fill="#fff"></circle>
+          <path d="M14 30c2-4 6-8 10-8s8 4 10 8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <span>Viver com TDH</span>
+      </a>
 
-      <button class="menu-toggle" id="menuBtn" aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰</button>
 
-      <ul class="menu" id="mainMenu" role="menubar">
-        <li role="none"><a role="menuitem" href="#inicio">Início</a></li>
-        <li role="none"><a role="menuitem" href="sobre.html">Sobre o TDH</a></li>
-        <li role="none"><a role="menuitem" href="#artigos">Artigos</a></li>
-        <li role="none"><a role="menuitem" href="#depoimentos">Depoimentos</a></li>
-        <li role="none"><a role="menuitem" href="contato.html">Contato</a></li>
+      <ul class="menu" id="menu" role="menubar">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="sobre.html">Sobre o TDH</a></li>
+        <li><a href="#artigos">Artigos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main>
-    <section id="inicio" aria-labelledby="inicio-title">
-      <h2 id="inicio-title">Bem-vindo</h2>
-      <p class="lead">Este blogue foi criado para informar e apoiar pessoas com TDH e quem convive com elas. Aqui encontras artigos práticos, estratégias de convivência e histórias reais.</p>
+    <section id="inicio">
+      <h2>Bem-vindo</h2>
+      <p class="lead">Este blogue foi criado para informar e apoiar pessoas com TDH e quem convive com elas.</p>
     </section>
 
-    <section id="artigos" aria-labelledby="artigos-title">
-      <h2 id="artigos-title">Artigos em destaque</h2>
+    <section id="artigos">
+      <h2>Artigos em Destaque</h2>
 
-      <div class="grid artigos">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1200&q=80" alt="Criança a estudar com foco">
-          <h3>Como identificar os primeiros sinais de TDH</h3>
-          <p>Conheça os sinais frequentes em crianças e adultos e saiba quando procurar avaliação profissional.</p>
-          <a class="btn" href="artigo1.html">Ler artigo</a>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Família a apoiar criança">
-          <h3>Causas e fatores de risco</h3>
-          <p>Fatores genéticos e ambientais podem influenciar. Saiba o que a ciência diz sobre as causas do TDH.</p>
-          <a class="btn" href="artigo2.html">Ler artigo</a>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80" alt="Criança a dormir e descansar bem">
-          <h3>A importância do sono e rotina</h3>
-          <p>O sono e rotinas estruturadas ajudam muito no controlo dos sintomas. Pequenas mudanças, grande impacto.</p>
-          <a class="btn" href="artigo3.html">Ler artigo</a>
-        </article>
-      </div>
-    </section>
-
-    <section aria-labelledby="conviver-title">
-      <h2 id="conviver-title">Convivência e dicas práticas</h2>
       <div class="grid">
         <article class="card">
-          <h3>Dica rápida: Estabeleça rotinas</h3>
-          <p>Rotinas claras reduzem ansiedade e ajudam a pessoa com TDH a prever tarefas e a manter-se organizada.</p>
-          <a class="btn" href="sobre.html">Saber mais</a>
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Criança estudando com foco">
+          <h3>Como identificar sinais de TDH</h3>
+          <p>Conheça os principais sinais de atenção, impulsividade e hiperatividade em diferentes idades.</p>
+          <a class="btn" href="artigo1.html">Ler mais</a>
         </article>
 
         <article class="card">
-          <h3>Dica rápida: Use lembretes visuais</h3>
-          <p>Quadros, listas e alarmes são aliados importantes no dia a dia.</p>
-          <a class="btn" href="sobre.html">Saber mais</a>
+          <img src="https://images.unsplash.com/photo-1584697964403-55b92d9e27cf?auto=format&fit=crop&w=800&q=80" alt="Concentração e foco">
+          <h3>Dicas para melhorar a concentração</h3>
+          <p>Estratégias simples e eficazes para aumentar o foco e o desempenho no dia a dia.</p>
+          <a class="btn" href="artigo2.html">Ler mais</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" alt="Família apoiando criança com TDH">
+          <h3>Convivendo com quem tem TDH</h3>
+          <p>Descubra formas saudáveis e empáticas de apoiar quem tem o transtorno.</p>
+          <a class="btn" href="artigo3.html">Ler mais</a>
         </article>
       </div>
     </section>
 
-    <section id="depoimentos" aria-labelledby="depo-title">
-      <h2 id="depo-title">Depoimentos e histórias reais</h2>
-      <p class="lead">Relatos de quem vive com TDH — pequenos passos que geram grandes mudanças.</p>
-
-      <div class="depo">
-        <div class="depo-item">
-          <p>“Descobri o TDH aos 28 anos. Com informação e acompanhamento consegui organizar melhor o meu tempo.”</p>
-          <div class="autor">— Ana, Porto</div>
-        </div>
-
-        <div class="depo-item">
-          <p>“O apoio familiar fez toda a diferença. Aprendemos a celebrar pequenas conquistas.”</p>
-          <div class="autor">— João, Luanda</div>
-        </div>
-
-        <div class="depo-item">
-          <p>“Pequenas rotinas noturnas ajudaram imenso o meu filho a dormir melhor e a concentrar-se na escola.”</p>
-          <div class="autor">— Marta, Lisboa</div>
-        </div>
+    <section id="depoimentos">
+      <h2>Depoimentos</h2>
+      <div class="grid">
+        <div class="card"><p>“Descobri o TDH aos 28 anos e a informação ajudou-me a organizar a rotina.”</p></div>
+        <div class="card"><p>“O apoio familiar fez toda a diferença.”</p></div>
       </div>
-
-      <h3 style="margin-top:24px;color:var(--blue-dark)">Partilhe a sua história</h3>
-      <p class="lead">Quer inspirar outras pessoas? Envie o seu depoimento (opcionalmente com pseudónimo).</p>
-
-      <form class="card-form" action="https://formspree.io/f/xovkzawy" method="POST" novalidate>
-        <label for="nome">Nome (ou pseudónimo)</label>
-        <input id="nome" name="nome" type="text" placeholder="Ex.: Maria P." required>
-
-        <label for="local">Cidade / País (opcional)</label>
-        <input id="local" name="local" type="text" placeholder="Ex.: Luanda, Angola">
-
-        <label for="historia">A sua história</label>
-        <textarea id="historia" name="mensagem" placeholder="Conta-nos brevemente a tua experiência..." required></textarea>
-
-        <input type="text" name="_gotcha" style="display:none">
-        <button class="cta" type="submit">Enviar depoimento</button>
-      </form>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div>© <span id="ano"></span> Viver com TDH — Informação e apoio para uma vida equilibrada.</div>
+  <footer>
+    <p>© <span id="year"></span> Viver com TDH — Informação e apoio.</p>
   </footer>
 
   <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-    const menuBtn = document.getElementById('menuBtn');
-    const mainMenu = document.getElementById('mainMenu');
-    menuBtn.addEventListener('click', () => {
-      const expanded = mainMenu.classList.toggle('show');
-      menuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-    });
-    document.querySelectorAll('#mainMenu a').forEach(a=>{
-      a.addEventListener('click', ()=> {
-        if (mainMenu.classList.contains('show')) {
-          mainMenu.classList.remove('show');
-          menuBtn.setAttribute('aria-expanded', 'false');
-        }
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu');
+    if(btn && menu){
+      btn.addEventListener('click', ()=>{
+        const open = menu.classList.toggle('show');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
-    });
+    }
   </script>
 </body>
 </html>
