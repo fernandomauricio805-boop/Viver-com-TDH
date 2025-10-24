@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre o TDH - Viver com TDH</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sobre o TDH — Viver com TDH</title>
+  <meta name="description" content="Saiba mais sobre o Transtorno de Déficit de Atenção e Hiperatividade (TDH) e como lidar com ele no dia a dia.">
+  <link rel="canonical" href="https://fernandomauricio.github.io/viver-com-tdh/sobre.html">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://fernandomauricio.github.io/viver-com-tdh/sitemap.xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: "Poppins", sans-serif; background: #f6f9fc; margin: 0; color: #333; }
-    header { background: linear-gradient(135deg, #4b8bd8, #6ca0dc); color: #fff; padding: 30px 20px; text-align: center; }
-    section {
-      max-width: 950px; margin: 40px auto; background: #fff; padding: 25px;
-      border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-    h1, h2, h3 { color: #3572b0; }
-    img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
-    ul { line-height: 1.8; }
-    a.voltar {
-      display: inline-block; background: #4b8bd8; color: white; padding: 10px 16px;
-      text-decoration: none; border-radius: 6px; margin-top: 30px;
-    }
-    a.voltar:hover { background: #3572b0; }
+    :root{--blue:#1e73be;--blue-dark:#155a9a;--page-bg:#f3f7fb;--card:#fff;--text:#1f2933;--muted:#6b7280;--radius:12px;}
+    @media (prefers-color-scheme: dark){:root{--page-bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#9ca3af;--blue:#2e89d2;--blue-dark:#1e73be;}}
+    body{margin:0;font-family:"Poppins",sans-serif;color:var(--text);background:var(--page-bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
+    nav{background:var(--card);box-shadow:0 2px 8px rgba(0,0,0,0.06);position:sticky;top:0;z-index:40}
+    .nav-inner{max-width:1100px;margin:0 auto;padding:10px 18px;display:flex;justify-content:space-between;align-items:center}
+    .brand{color:var(--blue);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:10px}
+    .menu{list-style:none;display:flex;gap:14px;margin:0;padding:0}
+    .menu a{color:var(--blue);text-decoration:none;font-weight:500}
+    main{max-width:900px;margin:40px auto;padding:0 18px}
+    h1{color:var(--blue-dark);font-size:2rem;margin-bottom:10px}
+    p{margin-bottom:16px;color:var(--text)}
+    footer{background:var(--blue);color:#fff;text-align:center;padding:18px 10px;margin-top:40px;border-top-left-radius:12px;border-top-right-radius:12px}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Sobre o Transtorno de Défice de Atenção e Hiperatividade (TDH)</h1>
-    <p>Compreender é o primeiro passo para conviver com empatia e equilíbrio.</p>
-  </header>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Viver com TDH</a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <section>
-    <img src="https://images.unsplash.com/photo-1555431189-0fabf66ab6a6?auto=format&fit=crop&w=1000&q=80" alt="TDH explicação">
+  <main>
+    <h1>Sobre o TDH</h1>
+    <p>O Transtorno de Déficit de Atenção e Hiperatividade (TDH) é uma condição neurológica que afeta a capacidade de concentração, controle de impulsos e regulação da energia. Afeta tanto crianças quanto adultos, embora muitas vezes só seja identificado tardiamente.</p>
+    <p>O objetivo do projeto <strong>Viver com TDH</strong> é criar um espaço informativo, acolhedor e baseado em evidências científicas, ajudando pessoas a compreender e gerir o transtorno de forma equilibrada e positiva.</p>
+    <p>Partilhamos dicas práticas, artigos educativos e depoimentos reais de pessoas que aprenderam a viver bem com o TDH.</p>
+  </main>
 
-    <h2>O que é o TDH?</h2>
-    <p>O Transtorno de Défice de Atenção e Hiperatividade (TDH) é uma condição neurobiológica que afeta a atenção, o controlo dos impulsos e, em alguns casos, o nível de atividade. Não é uma “falta de vontade”, mas sim uma diferença na forma como o cérebro processa estímulos e emoções.</p>
+  <footer>
+    <p>© <span id="year"></span> Viver com TDH — Informação e apoio.</p>
+  </footer>
 
-    <h2>Causas</h2>
-    <p>As causas exatas ainda não são totalmente conhecidas, mas estudos apontam fatores genéticos, ambientais e neurológicos. O TDH tende a ser hereditário e pode estar relacionado com o desequilíbrio de neurotransmissores, como a dopamina.</p>
-
-    <h2>Sintomas principais</h2>
-    <ul>
-      <li>Dificuldade em manter a atenção em tarefas longas;</li>
-      <li>Tendência a distrações frequentes;</li>
-      <li>Impulsividade e dificuldade em esperar;</li>
-      <li>Esquecimentos e desorganização;</li>
-      <li>Hiperatividade (em alguns casos).</li>
-    </ul>
-
-    <h2>Diagnóstico</h2>
-    <p>O diagnóstico deve ser feito por um profissional de saúde mental, como um psiquiatra ou neuropsicólogo. Ele é baseado em entrevistas, observações e questionários, considerando sintomas persistentes e seu impacto na vida diária.</p>
-
-    <h2>Prevenção e tratamento</h2>
-    <p>Embora o TDH não tenha cura, é possível controlar seus sintomas. O tratamento pode incluir:</p>
-    <ul>
-      <li>Terapia cognitivo-comportamental (TCC);</li>
-      <li>Acompanhamento médico e, em alguns casos, medicação;</li>
-      <li>Adaptações no ambiente escolar e profissional;</li>
-      <li>Exercícios físicos regulares e alimentação equilibrada;</li>
-      <li>Treino de organização e gestão do tempo.</li>
-    </ul>
-
-    <h2>Como conviver com alguém com TDH</h2>
-    <p>Empatia e paciência são fundamentais. Evite críticas desnecessárias e ofereça apoio constante. A comunicação aberta e o incentivo positivo ajudam a fortalecer a autoconfiança e o progresso da pessoa com TDH.</p>
-
-    <a href="index.html" class="voltar">← Voltar ao blogue</a>
-  </section>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
